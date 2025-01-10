@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Works = () => {
   return (
-    <div id="works" className="md:pt-[65px] pt-[30px] px-[40px] md:px-[140px] ">
+    <div id="works" className="md:pt-[65px] pt-[30px] px-[35px] md:px-[140px] ">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -19,17 +19,19 @@ const Works = () => {
         </div> 
         <div className="flex flex-col md:flex-row pt-10 gap-4 md:gap-0">
           <Link href={"https://news-paper-eight.vercel.app/"} target="_blank" className="flex flex-row gap-3 md:w-[50%]">
-          <div><Image src={"/images/logo.jpg"} alt="" width={168} height={150}/></div>
+          <div>
+          <Image src={"/images/logo.jpg"} alt="" width={168} height={150}/></div>
           <div className="md:border-t border-gray-500">
             <div className="text-gray-500 text-xs font-normal pt-2">Website</div>
-            <div className="text-white font-normal md:text-2xl tracking-normal">News Paper</div>
+            <div className="text-white font-normal md:text-2xl tracking-wide text-xs">News Paper</div>
           </div>
           </Link>
-           <Link href={"https://art-web-tau.vercel.app/"} target="_blank" className="flex flex-row gap-3 md:w-[50%]">
-          <div><Image src={"/images/artlogo.jpg"} alt="" width={168} height={300}/></div>
+           <Link href={"https://art-web-tau.vercel.app/"} target="_blank" className="flex flex-row gap-3 md:w-[50%] ">
+          <div>
+          <Image src={"/images/artlogo.jpg"} alt="" width={168} height={300}/></div>
           <div className="md:border-t border-gray-500">
             <div className="text-gray-500 text-xs font-normal pt-2">Website</div>
-            <div className="text-white font-normal md:text-2xl tracking-wide ">Canvastart Art</div>
+            <div className="text-white font-normal md:text-2xl tracking-wide text-xs">Canvastart Art</div>
           </div>
           </Link>
         </div>

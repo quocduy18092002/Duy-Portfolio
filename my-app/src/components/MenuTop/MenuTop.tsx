@@ -4,11 +4,12 @@ import { Drawer, Menu } from "antd";
 import styles from "./styles.module.scss";
 import scrollToSection from "../ui/scrollToSelection";
 import { MenuOutlined } from "@ant-design/icons";
+import Link from "next/link";
 
 type MenuItem = Required<MenuProps>["items"][number];
 
 const items: MenuItem[] = [
-  { label: "QUOC DUY", key: "QUOC DUY" },
+  { label:<Link href={"/"}> QUOC DUY</Link>, key: "QUOC DUY" },
   { label: "INTRO", key: "intro" },
   { label: "ABOUT", key: "about" },
   { label: "WORKS", key: "works" },
